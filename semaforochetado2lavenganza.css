@@ -1,0 +1,207 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    }
+    /* Estilos para el contenedor principal */
+    .page-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #333;
+    }
+
+    /*.home {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .in-flex {
+    flex: 1;
+    padding: 25px;
+    min-width: 250px;
+    }
+
+    .in-flex div {
+    padding: 25px;
+    background-color: #333;
+    margin: 10px; 
+
+    }*/
+
+    /* Estilos para el contenedor principal */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    /* Estilos para el contenedor de los bombillos */
+    .bulb-container {
+        display: grid;
+        grid-template-columns: repeat(5, 90px);
+        grid-template-rows: repeat(2, 90px);
+        gap: 10px;
+        margin-top: 200px;
+    }
+
+    /* Estilos para los bombillos */
+    .bulb {
+        width: 90px;
+        height: 90px;
+        border-radius: 60%;
+        background-color: gray;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.359), inset 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+    }
+
+    .top-left {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    }
+
+    .top-right {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    }
+
+    .middle-text {
+    position: absolute;
+    top: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    size: 150px;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgb(175, 174, 174);
+    }
+
+    /* Estilos para el botón */
+    #btn-toggle {
+        margin-top: 60px;
+        width: 150px; /* Ancho del botón */
+        height: 150px; /* Alto del botón */
+        padding: 0; /* No se utiliza padding */
+        font-size: 18px;
+        border-radius: 50%; /* Hace que el botón sea completamente circular */
+        border: none;
+        background-color: rgb(126, 0, 0); /* Color de fondo del botón */
+        color: #fff; /* Color del texto del botón */
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease;
+    }
+
+    /* Cambia el color del botón cuando se pasa el ratón sobre él */
+    #btn-toggle:hover {
+        background-color: rgb(0, 0, 133);
+    }
+    
+    .recuadro {
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    }
+    .contenedor-convenciones {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    background-color: rgb(129, 129, 129); /* Color del fondo */
+    }
+    .convencion {
+    margin-bottom: 10px;
+    padding-left: 40px; /* Aumentamos el padding para dejar espacio para el recuadro de color */
+    position: relative; /* Permite posicionar el recuadro de color correctamente */
+    color: white; /* Cambiamos el color de texto a blanco */
+    background-color: #33333300;
+    }
+    .convencion::before, .convencion::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    }
+    .convencion::before {
+    background-color: rgba(255, 255, 255, 0);
+    }
+    .convencion::after {
+    background-color: #33333300;
+    top: 110%;
+    }
+    .color-recuadro {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    }
+    .convencion-1 .color-recuadro {
+    background-color: #ff5733; /* Color 1 */
+    }
+    .convencion-2 .color-recuadro {
+    background-color: #ff0000; /* Color 2 */
+    }
+    .convencion-3 .color-recuadro {
+    background-color: #ffdd00; /* Color 3 */
+    }
+    .convencion-4 .color-recuadro {
+    background-color: #ffcc33; /* Color 4 */
+    }
+    .convencion-5 .color-recuadro {
+    background-color: #00ff00; /* Color 5 */
+    }
+    .convencion-6 .color-recuadro {
+    background-color: #0022ff; /* Color 6 */
+    }
+    .convencion-7 .color-recuadro {
+    background-color: #cc6699; /* Color 7 */
+    }
+    .convencion-8 .color-recuadro {
+    background-color: #000000; /* Color 8 */
+    }
+    .convencion-9 .color-recuadro {
+    background-color: #ffffff; /* Color 9 */
+    }
+    .convencion-10 .color-recuadro {
+    background-color: #99cc00; /* Color 10 */
+    }
+  /* Añadir clases para las demás convenciones si es necesario */
+    .convencion span {
+    font-weight: bold;
+    }
+
+    .boton-rojo {
+    width: 25px;
+    height: 25px;
+    background-color: #ff0000; /* Color del botón */
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    border-radius: 50%; /* Círculo */
+    cursor: pointer;
+    box-shadow: inset -2px -2px 5px rgba(54, 54, 54, 0.2), inset 2px 2px 5px rgba(255,255,255,0.2); /* Efecto 3D */
+    }
+
+    .bandera {
+    width: 240px;
+    height: 120px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    position: fixed;
+    top: 120px;
+    left: 43%;
+    margin-left: -10px; /* Para centrar horizontalmente */
+    background-color: gray;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.359), inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+    }

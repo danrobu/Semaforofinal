@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semaforo</title>
+<link rel="stylesheet" href="semaforochetado2lavenganza.css">
+
+</head>
+<body>
+<section class ="home">
+
+    <div class = "in-flex"></div>
+    <div class = "in-flex">
+<!-- Contenedor principal -->
+        <div class="page-center"> <!-- Nuevo contenedor para centrar la página -->
+
+            <img src="Direccion Imagen" alt="Imagen Izquierda" class="top-left"> <!--añadir direccion de la imagen a usar-->
+            <p class="middle-text">IV Competencia Nacional de Vehículos de Tracción Eléctrica</p>
+            <img src="Direccion Imagen" alt="Imagen Derecha" class="top-right"> <!--añadir direccion de la imagen a usar-->
+            
+            <div class="bandera"></div>
+
+            <div class="container">
+        <!-- Contenedor de los bombillos -->
+                <div class="bulb-container">
+            <!-- Bombillos de arriba -->
+                    <div class="bulb top"></div>
+                    <div class="bulb top"></div>
+                    <div class="bulb top"></div>
+                    <div class="bulb top"></div>
+                    <div class="bulb top"></div>
+            <!-- Bombillos de abajo -->
+                    <div class="bulb bottom"></div>
+                    <div class="bulb bottom"></div>
+                    <div class="bulb bottom"></div>
+                    <div class="bulb bottom"></div>
+                    <div class="bulb bottom"></div>
+                </div>
+
+        <!-- Botón para encender/apagar los bombillos -->
+                <button id="btn-toggle">INICIAR</button>
+            </div>
+            <div class="recuadro">
+                    <div class="contenedor-convenciones">
+
+                        <div class="convencion convencion-1">
+                            <div class="color-recuadro"></div>
+                            <span>1.</span> Bandera a cuadros
+                            <button class="boton-rojo" onclick="changeLedColor('#ff5733')"></button>
+                        </div>
+                        <div class="convencion convencion-2">
+                            <div class="color-recuadro"></div>
+                            <span>2.</span> Bandera roja
+                            <button class="boton-rojo" onclick="changeLedColor('#ff0000')"></button>
+                        </div>
+                        <div class="convencion convencion-3">
+                            <div class="color-recuadro"></div>
+                            <span>3.</span> Bandera amarilla
+                            <button class="boton-rojo" onclick="changeLedColor('#ffdd00')"></button>
+                        </div>
+                        <div class="convencion convencion-4">
+                            <div class="color-recuadro"></div>
+                            <span>4.</span> Bandera a rayas
+                            <button class="boton-rojo" onclick="changeLedColor('#ffcc33')"></button>
+                        </div>
+                        <div class="convencion convencion-5">
+                            <div class="color-recuadro"></div>
+                            <span>5.</span> Bandera verde
+                            <button class="boton-rojo" onclick="changeLedColor('#00ff00')"></button>
+                        </div>
+                        <div class="convencion convencion-6">
+                            <div class="color-recuadro"></div>
+                            <span>6.</span> Bandera azul
+                            <button class="boton-rojo" onclick="changeLedColor('##0022ff')"></button>
+                        </div>
+                        <div class="convencion convencion-7">
+                            <div class="color-recuadro"></div>
+                            <span>7.</span> Bandera partida
+                            <button class="boton-rojo" onclick="changeLedColor('#cc6699')"></button>
+                        </div>
+                        <div class="convencion convencion-8">
+                            <div class="color-recuadro"></div>
+                            <span>8.</span> Bandera negra
+                            <button class="boton-rojo" onclick="changeLedColor('#000000')"></button>
+                        </div>
+                        <div class="convencion convencion-9">
+                            <div class="color-recuadro"></div>
+                            <span>9.</span> Bandera blanca
+                            <button class="boton-rojo" onclick="changeLedColor('#ffffff')"></button>
+                        </div>
+                        <div class="convencion convencion-10">
+                            <div class="color-recuadro"></div>
+                            <span>10.</span> Bandera negra con circulo
+                            <button class="boton-rojo" onclick="changeLedColor('#99cc00')"></button>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="semaforochetado2lavenganza.js"></script>
+    </div>
+</section>
+</body>
+</html>
